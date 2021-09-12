@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>インストール | TypeScript で書く Vue.js 入門</title>
+    <meta name="description" content="composition API 入門">
+    <link rel="stylesheet" href="/assets/style.cac40d77.css">
+    <link rel="modulepreload" href="/assets/Home.5eb2a353.js">
+    <link rel="modulepreload" href="/assets/app.45d82a66.js">
+    <link rel="modulepreload" href="/assets/guide_2-ハンズオン.md.201ecd35.lean.js">
+    <link rel="modulepreload" href="/assets/app.45d82a66.js">
+    <meta name="twitter:title" content="インストール | TypeScript で書く Vue.js 入門">
+    <meta property="og:title" content="インストール | TypeScript で書く Vue.js 入門">
+  </head>
+  <body>
+    <div id="app"><!--[--><div class="theme"><header class="nav-bar" data-v-675d8756><div class="sidebar-button" data-v-675d8756><svg class="icon" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z" class></path></svg></div><a class="nav-bar-title" href="/" aria-label="TypeScript で書く Vue.js 入門, back to home" data-v-675d8756 data-v-4a583abe><!----> TypeScript で書く Vue.js 入門</a><div class="flex-grow" data-v-675d8756></div><div class="nav" data-v-675d8756><!----></div><!--[--><!--]--></header><aside class="sidebar" data-v-83e92a68><!----><!--[--><!--]--><ul class="sidebar-links" data-v-83e92a68><!--[--><li class="sidebar-link"><a class="sidebar-link-item" href="/guide/0-はじめに">はじめに</a><!----></li><li class="sidebar-link"><a class="sidebar-link-item" href="/guide/1-what-is-composition-api">Composition API とは</a><!----></li><li class="sidebar-link"><a class="sidebar-link-item active" href="/guide/2-ハンズオン">ハンズオン</a><ul class="sidebar-links"><li class="sidebar-link"><a class="sidebar-link-item" href="#インストール">インストール</a><ul class="sidebar-links"><li class="sidebar-link"><a class="sidebar-link-item" href="#vue-cli-のインストール">Vue-cli のインストール</a><!----></li><li class="sidebar-link"><a class="sidebar-link-item" href="#プロジェクトの作成">プロジェクトの作成</a><!----></li><li class="sidebar-link"><a class="sidebar-link-item" href="#サンプルコード">サンプルコード</a><!----></li></ul></li></ul></li><!--]--></ul><!--[--><!--]--></aside><!-- TODO: make this button accessible --><div class="sidebar-mask"></div><main class="page" data-v-7eddb2c4><div class="container" data-v-7eddb2c4><!--[--><!--]--><div style="position:relative;" class="content" data-v-7eddb2c4><div><h2 id="インストール" tabindex="-1">インストール <a class="header-anchor" href="#インストール" aria-hidden="true">#</a></h2><h3 id="vue-cli-のインストール" tabindex="-1">Vue-cli のインストール <a class="header-anchor" href="#vue-cli-のインストール" aria-hidden="true">#</a></h3><div class="language-{bash}"><pre><code>$ npm install -g @vue/cli@next
+
+$ vue -V
+&gt; @vue/cli 4.5.4
+</code></pre></div><h3 id="プロジェクトの作成" tabindex="-1">プロジェクトの作成 <a class="header-anchor" href="#プロジェクトの作成" aria-hidden="true">#</a></h3><p>手動セッティングで VueX, TypeScript, Router に check を入れて有効にします。</p><p>Vue3 の選択も忘れずに</p><div class="language-bash"><pre><code>$ vue create vue3-sample
+
+? Please pick a preset: 
+  Default <span class="token punctuation">(</span><span class="token punctuation">[</span>Vue <span class="token number">2</span><span class="token punctuation">]</span> babel, eslint<span class="token punctuation">)</span> 
+  Default <span class="token punctuation">(</span>Vue <span class="token number">3</span> Preview<span class="token punctuation">)</span> <span class="token punctuation">(</span><span class="token punctuation">[</span>Vue <span class="token number">3</span><span class="token punctuation">]</span> babel, eslint<span class="token punctuation">)</span> 
+❯ Manually <span class="token keyword">select</span> features 
+
+? Check the features needed <span class="token keyword">for</span> your project:
+ <span class="token punctuation">(</span>*<span class="token punctuation">)</span> Choose Vue version
+ <span class="token punctuation">(</span>*<span class="token punctuation">)</span> Babel
+ <span class="token punctuation">(</span>*<span class="token punctuation">)</span> TypeScript
+ <span class="token punctuation">(</span> <span class="token punctuation">)</span> Progressive Web App <span class="token punctuation">(</span>PWA<span class="token punctuation">)</span> Support
+<span class="token operator">&gt;</span><span class="token punctuation">(</span>*<span class="token punctuation">)</span> Router
+ <span class="token punctuation">(</span>*<span class="token punctuation">)</span> Vuex
+ <span class="token punctuation">(</span> <span class="token punctuation">)</span> CSS Pre-processors
+ <span class="token punctuation">(</span>*<span class="token punctuation">)</span> Linter / Formatter
+ <span class="token punctuation">(</span> <span class="token punctuation">)</span> Unit Testing
+ <span class="token punctuation">(</span> <span class="token punctuation">)</span> E2E Testing
+
+ ? Choose a version of Vue.js that you want to start the project with
+  <span class="token number">2</span>.x
+<span class="token operator">&gt;</span> <span class="token number">3</span>.x <span class="token punctuation">(</span>Preview<span class="token punctuation">)</span>
+</code></pre></div><h3 id="サンプルコード" tabindex="-1">サンプルコード <a class="header-anchor" href="#サンプルコード" aria-hidden="true">#</a></h3><div class="language-vue"><pre><code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>template</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>form</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>label</span> <span class="token attr-name">for</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>title<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>メッセージ<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>label</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>input</span> <span class="token attr-name">name</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>title<span class="token punctuation">&quot;</span></span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>text<span class="token punctuation">&quot;</span></span> <span class="token attr-name">v-model</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>state.message<span class="token punctuation">&quot;</span></span> <span class="token punctuation">/&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>form</span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span><span class="token punctuation">&gt;</span></span>
+    {{state.message}}
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>template</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span> <span class="token attr-name">lang</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>ts<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span><span class="token script"><span class="token language-javascript">
+<span class="token keyword">import</span> <span class="token punctuation">{</span> defineComponent<span class="token punctuation">,</span> reactive <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">&quot;vue&quot;</span>
+<span class="token keyword">interface</span> <span class="token class-name">State</span> <span class="token punctuation">{</span>
+  message<span class="token operator">:</span> string
+<span class="token punctuation">}</span>
+<span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token function">defineComponent</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+  <span class="token function">setup</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">const</span> state <span class="token operator">=</span> reactive<span class="token operator">&lt;</span>State<span class="token operator">&gt;</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+      message<span class="token operator">:</span> <span class="token string">&quot;hoge&quot;</span>
+    <span class="token punctuation">}</span><span class="token punctuation">)</span>
+      <span class="token keyword">return</span> <span class="token punctuation">{</span>state<span class="token punctuation">}</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span>
+</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">&gt;</span></span>
+</code></pre></div></div></div><footer class="page-footer" data-v-7eddb2c4 data-v-fb8d84c6><div class="edit" data-v-fb8d84c6><div class="edit-link" data-v-fb8d84c6 data-v-1ed99556><!----></div></div><div class="updated" data-v-fb8d84c6><!----></div></footer><div class="next-and-prev-link" data-v-7eddb2c4 data-v-38ede35f><div class="container" data-v-38ede35f><div class="prev" data-v-38ede35f><a class="link" href="/guide/1-what-is-composition-api" data-v-38ede35f><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24" class="icon icon-prev" data-v-38ede35f><path d="M19,11H7.4l5.3-5.3c0.4-0.4,0.4-1,0-1.4s-1-0.4-1.4,0l-7,7c-0.1,0.1-0.2,0.2-0.2,0.3c-0.1,0.2-0.1,0.5,0,0.8c0.1,0.1,0.1,0.2,0.2,0.3l7,7c0.2,0.2,0.5,0.3,0.7,0.3s0.5-0.1,0.7-0.3c0.4-0.4,0.4-1,0-1.4L7.4,13H19c0.6,0,1-0.4,1-1S19.6,11,19,11z"></path></svg><span class="text" data-v-38ede35f>Composition API とは</span></a></div><div class="next" data-v-38ede35f><!----></div></div></div><!--[--><!--]--></div></main></div><!----><!--]--></div>
+    <script>__VP_HASH_MAP__ = JSON.parse("{\"index.md\":\"f6564d2c\",\"guide_0-はじめに.md\":\"b1a24b49\",\"guide_1-what-is-composition-api.md\":\"d567776b\",\"guide_2-ハンズオン.md\":\"201ecd35\"}")</script>
+    <script type="module" async src="/assets/app.45d82a66.js"></script>
+  </body>
+</html>

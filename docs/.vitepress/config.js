@@ -19,5 +19,6 @@ module.exports = {
     repoLabel: 'Github',
     editLinks: true,
     editLinkText: 'ページに不明点や誤字等があれば、Github にて修正を提案してください！',
-  }
+  },
+  dest: "dist"
 }
