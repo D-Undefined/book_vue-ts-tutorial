@@ -1,0 +1,14 @@
+{
+  "name": "book_vue-ts-tutorial",
+  "version": "1.0.0",
+  "scripts": {
+    "dev": "vitepress dev docs",
+    "build": "vitepress build docs",
+    "serve": "vitepress serve docs"
+  },
+  "author": "kazuki-komori",
+  "license": "MIT",
+  "devDependencies": {
+    "vitepress": "^0.17.3"
+  }
+}
